@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>My Interactive Dashboard</h1>
+            <button id="theme-toggle">Toggle Theme</button>
+        </header>
+        <div class="widget-container">
+            <div class="widget weather">
+                <h2>Weather</h2>
+                <p>Current weather will be displayed here.</p>
+            </div>
+            <div class="widget calendar">
+                <h2>Calendar</h2>
+                <p>Calendar will be displayed here.</p>
+            </div>
+            <div class="widget todo">
+                <h2>To-Do List</h2>
+                <input type="text" id="task-input" placeholder="Enter a new task">
+                <button id="add-task">Add Task</button>
+                <ul id="task-list"></ul>
+            </div>
+            <div class="widget goals">
+                <h2>Daily Goals</h2>
+                <p>Track your daily goals here.</p>
+            </div>
+            <div class="widget reminders">
+                <h2>Reminders</h2>
+                <input type="text" id="reminder-input" placeholder="Enter a reminder">
+                <button id="set-reminder">Set Reminder</button>
+                <ul id="reminder-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
